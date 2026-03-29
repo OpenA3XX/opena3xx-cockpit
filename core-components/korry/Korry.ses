@@ -1,0 +1,216 @@
+(session Korry.ses
+  (base_design Korry.dsn)
+  (placement
+    (resolution um 10)
+    (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+      (place J1 1282300 -827750 back 0)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
+      (place J2 1282300 -713000 back 0)
+    )
+    (component LED_THT:LED_D3.0mm
+      (place D4 1342100 -729000 front 0)
+      (place D1 1341100 -839000 front 0)
+    )
+    (component OpenA3XX:Korry_Switch_Discrete
+      (place U1 1414300 -825000 front 0)
+    )
+    (component Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder
+      (place R4 1407300 -714000 front 0)
+      (place R2 1405800 -854500 front 180)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version 9.0.5)
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(D1-K)"
+        (wire
+          (path F.Cu 4000
+            1341100 -839000
+            1354457 -825643
+            1372269 -825643
+            1379772 -833146
+            1379772 -868822
+            1382743 -871793
+            1404007 -871793
+            1421300 -854500
+          )
+        )
+      )
+      (net "Net-(J2-Pin_2)"
+        (wire
+          (path B.Cu 4000
+            1406800 -737544
+            1408758 -737544
+          )
+        )
+        (wire
+          (path B.Cu 4000
+            1408758 -737544
+            1406800 -737544
+          )
+        )
+        (wire
+          (path B.Cu 4000
+            1408758 -737544
+            1387197 -715983
+            1304717 -715983
+            1282300 -738400
+          )
+        )
+        (via "Via[0-1]_600:300_um" 1408758 -737544
+        )
+        (wire
+          (path F.Cu 4000
+            1390300 -854500
+            1408758 -836042
+            1408758 -737544
+          )
+        )
+      )
+      (net "Net-(D4-K)"
+        (wire
+          (path F.Cu 4000
+            1342100 -729000
+            1358128 -712972
+            1390770 -712972
+          )
+        )
+        (wire
+          (path F.Cu 5000
+            1390770 -712972
+            1391800 -714000
+          )
+          (type protect)
+        )
+      )
+      (net "Net-(J2-Pin_3)"
+        (wire
+          (path F.Cu 4000
+            1420035 -714000
+            1391360 -742675
+            1303425 -742675
+            1282300 -763800
+          )
+        )
+        (wire
+          (path F.Cu 5000
+            1420035 -714000
+            1417270 -714000
+          )
+          (type protect)
+        )
+        (wire
+          (path F.Cu 5000
+            1422800 -714000
+            1420035 -714000
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 5000
+            1282300 -761407
+            1282300 -763800
+          )
+          (type protect)
+        )
+      )
+      (net "Net-(J1-Pin_2)"
+        (wire
+          (path F.Cu 4000
+            1282300 -853150
+            1304747 -830703
+            1304747 -802553
+            1323300 -784000
+          )
+        )
+      )
+      (net "Net-(J1-Pin_1)"
+        (wire
+          (path B.Cu 4000
+            1282300 -827750
+            1294817 -827750
+          )
+        )
+        (wire
+          (path B.Cu 4000
+            1315070 -808000
+            1314567 -808000
+            1294817 -827750
+          )
+        )
+        (wire
+          (path B.Cu 5000
+            1319185 -808000
+            1323300 -808000
+          )
+          (type protect)
+        )
+        (wire
+          (path B.Cu 5000
+            1315070 -808000
+            1319185 -808000
+          )
+          (type protect)
+        )
+      )
+      (net "Net-(D1-A)"
+        (wire
+          (path F.Cu 4000
+            1282300 -713000
+            1282300 -725517
+          )
+        )
+        (wire
+          (path F.Cu 4000
+            1366500 -839000
+            1339721 -865779
+            1276655 -865779
+            1269783 -858907
+            1269783 -732557
+            1276823 -725517
+            1282300 -725517
+          )
+        )
+      )
+      (net "Net-(D4-A)"
+        (wire
+          (path B.Cu 4000
+            1367500 -729000
+            1353826 -742674
+            1319920 -742674
+            1295198 -767396
+            1295198 -776302
+            1282300 -789200
+          )
+        )
+      )
+    )
+  )
+)
